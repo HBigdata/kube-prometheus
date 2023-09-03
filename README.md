@@ -173,16 +173,16 @@ helm help
 第一种方法是下载 `manifests` 包里的yaml，再通过 `kubectl` 部署。
 
 #### 1、下载kube-prometheus
-下载地址：[https://github.com/prometheus-operator/kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
+官方下载地址：[https://github.com/prometheus-operator/kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
+# 在官方的基础之上进行了修改和增加内容
+本地址：[https://gitee.com/hadoop-bigdata/kube-prometheus.git](https://gitee.com/hadoop-bigdata/kube-prometheus.git)
 
 ```bash
 git clone https://gitee.com/hadoop-bigdata/kube-prometheus.git
-# 官方源地址，但是已经在原有的yaml文件中进行完善修改和增加
-# git clone https://github.com/prometheus-operator/kube-prometheus.git
 cd kube-prometheus
 ```
 > 【注】在 `release-0.11` 版本之后新增了 `NetworkPolicy` 默认是允许自己访问，如果了解 `NetworkPolicy` 可以修改一下默认的规则，可以用查看 `ls manifests/*networkPolicy*`，如果不修改的话则会影响到修改 `NodePort` 类型也无法访问，如果不会 `Networkpolicy` 可以直接删除就行。
-#### 2、修改镜像源
+#### 2、修改镜像源（可选，下面已经提供了离线镜像包）
 > 国外镜像源某些镜像无法拉取，我们这里修改prometheus-operator，prometheus，alertmanager，kube-state-metrics，node-exporter，prometheus-adapter的镜像源为国内镜像源。我这里使用的是中科大的镜像源。
 
 ```bash
@@ -194,6 +194,17 @@ sed -i 's/quay.io/quay.mirrors.ustc.edu.cn/g' `grep "quay.io" -rl *`
 grep -rn 'quay.io' *
 grep -rn 'image: ' *
 ```
+这里也提供镜像包
+
+> 链接：[https://pan.baidu.com/s/10ksK1OtKwlvZqbExKmZgLw?pwd=bcu6](https://pan.baidu.com/s/10ksK1OtKwlvZqbExKmZgLw?pwd=bcu6) 
+提取码：`bcu6`
+
+
+```
+# 下载完镜像包，批量分发到所有k8s节点，解压进入镜像包目录，直接执行以下命令就可将所有镜像加载
+sh load-images.sh
+```
+
 #### 3、修改 service 配置类型为 NodePort
 > 为了可以从外部访问 `prometheus`，`alertmanager`，`grafana`，我们这里修改 `promethes`，`alertmanager`，`grafana`的 `service` 类型为 `NodePort` 类型。
 
@@ -327,10 +338,6 @@ kubectl get all -n monitoring
 ![输入图片说明](images/3.png)
 > 【温馨提示】如果上面下载镜像失败，可以使用以下地址下载，当然也可以去hub.docker.com下载。
 
-这里也提供镜像包
-
-> 链接：[https://pan.baidu.com/s/10ksK1OtKwlvZqbExKmZgLw?pwd=bcu6](https://pan.baidu.com/s/10ksK1OtKwlvZqbExKmZgLw?pwd=bcu6) 
-提取码：`bcu6`
 #### 6、浏览器访问
 
 **Prometheus**：`http://ip:30090/`
