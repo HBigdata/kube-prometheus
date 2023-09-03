@@ -20,17 +20,17 @@ Prometheus是一种开源的监控和警报工具，用于收集和记录应用�
 
 以前也讲过prometheus，如果想查阅我之前prometheus教程，地址如下：
 
-- [Prometheus原理详解](https://blog.csdn.net/qq_35745940/article/details/121186079)
-- [Kubernetes（k8s）部署Promehteus（kube-prometheus&kube-prometheus-stack）监控](https://blog.csdn.net/qq_35745940/article/details/120929882)
-- [【云原生】Kubernetes 有状态应用程序控制器 Operator](https://blog.csdn.net/qq_35745940/article/details/126805077)
-- [【云原生】Prometheus+Grafana on K8s 环境部署](https://blog.csdn.net/qq_35745940/article/details/126818214)
-- [【云原生】Prometheus+Grafana 监控 k8s 资源实战操作](https://blog.csdn.net/qq_35745940/article/details/126905324)
-- [【云原生】Prometheus Pushgetway讲解与实战操作](https://blog.csdn.net/qq_35745940/article/details/128271684)
-- [【云原生】Prometheus AlertManager讲解与实战操作](https://blog.csdn.net/qq_35745940/article/details/128276195)
-- [【云原生】Prometheus PromQL讲解与实战操作](https://blog.csdn.net/qq_35745940/article/details/128294652)
-- [【云原生】Prometheus 自定义告警规则](https://blog.csdn.net/qq_35745940/article/details/128309034)
-- [【云原生】Grafana 介绍与实战操作](https://blog.csdn.net/qq_35745940/article/details/128358246)
-- [【云原生】Grafana Alerting 告警模块介绍与实战操作](https://blog.csdn.net/qq_35745940/article/details/128378801)
+- [Prometheus原理详解](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247486147&idx=1&sn=0c1bc2f3b8b0b5c90ce9fa174a32259f&chksm=ead0f62adda77f3cad2f1ddfb9910f414ce2889f26118a416fb1c4b01f65d5eee885ffc09ce8#rd)
+- [Kubernetes（k8s）部署Promehteus（kube-prometheus&kube-prometheus-stack）监控](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247486093&idx=1&sn=e4790ddf22f3d5e6c0824bfd0e84c073&chksm=ead0f664dda77f7239e137dcf9a2a5ca7da29e83f97d113e037b1527a47656ced717110eaa41#rd)
+- [【云原生】Kubernetes 有状态应用程序控制器 Operator](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247486396&idx=1&sn=8e379ab3288d44662d73af8a3d4c66f0&chksm=ead0f755dda77e432ef232ec32dc0b0744c00b3030f54d53d36c44719be56bd9449a7fcaa555#rd)
+- [【云原生】Prometheus+Grafana on K8s 环境部署](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247486420&idx=1&sn=dbb82628e7ce6b9091b7b058b444bbce&chksm=ead0f73ddda77e2bb500d15439be7f89c55e9a8ed5b7a38fcb47b3b5d6babba981894607c93d#rd)
+- [【云原生】Prometheus+Grafana 监控 k8s 资源实战操作](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247486466&idx=1&sn=e00883e50e8c47ee5538709da67bcfcb&chksm=ead0f0ebdda779fd88da6f16048a7fbf649123072e308aa9ba9de2c92063d4bf75338a3b7100#rd)
+- [【云原生】Prometheus Pushgetway讲解与实战操作](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247486932&idx=1&sn=b868276cef70bd05cdad2dcaec4e3b60&chksm=ead0f13ddda7782b5a57e448d34624e407183e40812c919a982991c9a844832dac009ecc8bcf#rd)
+- [【云原生】Prometheus AlertManager讲解与实战操作](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247486944&idx=1&sn=860e7ae0e35426f0f04a3870643f9fbc&chksm=ead0f109dda7781f8e183b1b5e2491bd6c6bc1bebc6851562d9914b93ebc4f37aa2c3f6f6fb3#rd)
+- [【云原生】Prometheus PromQL讲解与实战操作](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247487098&idx=1&sn=e7501c44fa6524ce8d75fc640a55907d&chksm=ead0f293dda77b85405323efad479a36409b46ea409b621d5c581c7aac3a77d912ce4e8fd671#rd)
+- [【云原生】Prometheus 自定义告警规则](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247487105&idx=1&sn=d7e3b326b1b90f51b56f8172b8ae3a7f&chksm=ead0f268dda77b7ee063e2c26f78b841990a62bbd41dc88105c25332d54f0d72bed948ffb3a3#rd)
+- [【云原生】Grafana 介绍与实战操作](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247487107&idx=1&sn=2bb980b75375dbfe0c2342cf2a762e04&chksm=ead0f26adda77b7cec0a7a064f26e7eb8b67ec96936f03dd7b80e092cdd00b880773a922e1df#rd)
+- [【云原生】Grafana Alerting 告警模块介绍与实战操作](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247487109&idx=1&sn=666df101b54eaec8d2d21f49837e83bc&chksm=ead0f26cdda77b7a6f1cb95b0fcd2ca067a596b3b5b06ad7ee714f17cb5db78cd1926ca0b4fc#rd)
 
 ## 二、常见的几款监控工具
 以下这些工具可以用于在 Kubernetes 集群中实现监控和指标收集，以便于监视集群中的各种资源和应用的性能。
@@ -153,8 +153,8 @@ kube-prometheus-stack GitHub地址：[https://github.com/prometheus-community/he
 ### 1）k8s 环境安装
 k8s 环境安装之前写过很多文档，可以参考我以下几篇文章：
 
-- [【云原生】k8s 离线部署讲解和实战操作](https://blog.csdn.net/qq_35745940/article/details/129213456)
-- [【云原生】k8s 环境快速部署（一小时以内部署完）](https://blog.csdn.net/qq_35745940/article/details/129481379)
+- [【云原生】k8s 离线部署讲解和实战操作](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247486688&idx=1&sn=e041392d219869c75cf36cca17ad81e5&chksm=ead0f009dda7791f8ef5221e49782d36b74426b6f406d22018b69e6322b3de40a215740eb4a1#rd)
+- [【云原生】k8s 环境快速部署（一小时以内部署完）](https://mp.weixin.qq.com/s?__biz=MzI3MDM5NjgwNg==&mid=2247486963&idx=1&sn=c1c094f338d88c44c5b573cb2dd0b10f&chksm=ead0f11adda7780cd32d0e87ac30db538b834668b6948b91ebf3db7b1a05cf5819fcd6f41506#rd)
 ### 2）安装 helm
 下载地址：[https://github.com/kubernetes/helm/releases](https://github.com/kubernetes/helm/releases)
 
