@@ -170,9 +170,8 @@ helm version
 helm help
 ```
 ### 3）直接安装方式（kube-prometheus）
-第一种方法是下载 `manifests` 包里的yaml，再通过 `kubectl` 部署。
 
-#### 1、下载kube-prometheus
+#### 1、下载 kube-prometheus
 官方下载地址：[https://github.com/prometheus-operator/kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
 # 在官方的基础之上进行了修改和增加内容
 本地址：[https://gitee.com/hadoop-bigdata/kube-prometheus.git](https://gitee.com/hadoop-bigdata/kube-prometheus.git)
