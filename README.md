@@ -173,7 +173,7 @@ helm help
 
 #### 1、下载 kube-prometheus
 官方下载地址：[https://github.com/prometheus-operator/kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
-# 在官方的基础之上进行了修改和增加内容
+#在官方的基础之上进行了修改和增加内容
 本地址：[https://gitee.com/hadoop-bigdata/kube-prometheus.git](https://gitee.com/hadoop-bigdata/kube-prometheus.git)
 
 ```bash
