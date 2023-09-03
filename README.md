@@ -176,7 +176,9 @@ helm help
 下载地址：[https://github.com/prometheus-operator/kube-prometheus](https://github.com/prometheus-operator/kube-prometheus)
 
 ```bash
-git clone https://github.com/prometheus-operator/kube-prometheus.git
+git clone https://gitee.com/hadoop-bigdata/kube-prometheus.git
+# 官方源地址，但是已经在原有的yaml文件中进行完善修改和增加
+# git clone https://github.com/prometheus-operator/kube-prometheus.git
 cd kube-prometheus
 ```
 > 【注】在 `release-0.11` 版本之后新增了 `NetworkPolicy` 默认是允许自己访问，如果了解 `NetworkPolicy` 可以修改一下默认的规则，可以用查看 `ls manifests/*networkPolicy*`，如果不修改的话则会影响到修改 `NodePort` 类型也无法访问，如果不会 `Networkpolicy` 可以直接删除就行。
