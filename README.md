@@ -337,7 +337,6 @@ kubectl apply -f manifests/
 kubectl get all -n monitoring
 ```
 ![输入图片说明](images/3.png)
-> 【温馨提示】如果上面下载镜像失败，可以使用以下地址下载，当然也可以去hub.docker.com下载。
 
 #### 6、浏览器访问
 
